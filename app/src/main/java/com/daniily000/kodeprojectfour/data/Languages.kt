@@ -1,0 +1,147 @@
+package com.daniily000.kodeprojectfour.data
+
+import com.daniily000.kodeprojectfour.data.Languages.Creator.authors
+import com.daniily000.kodeprojectfour.data.Languages.Creator.paradigms
+import com.daniily000.kodeprojectfour.data.Paradigm.*
+import java.net.URL
+import java.util.*
+import kotlin.collections.ArrayList
+
+object Languages {
+
+    val list: List<Language>
+
+    val JAVA = Language(
+        "Java",
+        authors(Author("James", "Gosling")),
+        "1995",
+        paradigms(OBJECT_ORIENTED, STRUCTURED, IMPERATIVE, GENERIC, REFLECTIVE, CONCURRENT),
+        15.932,
+        URL("https://en.wikipedia.org/wiki/Java_(programming_language)")
+    )
+
+    val C = Language(
+        "C",
+        authors(Author("James", "Gosling")),
+        "1973",
+        paradigms(IMPERATIVE, STRUCTURED),
+        14.282,
+        URL("https://en.wikipedia.org/wiki/C_(programming_language)")
+    )
+
+    val PYTHON = Language(
+        "Python",
+        authors(Author("Guido", "van Rossum")),
+        "1991",
+        paradigms(FUNCTIONAL, IMPERATIVE, OBJECT_ORIENTED, REFLECTIVE),
+        8.376,
+        URL("https://en.wikipedia.org/wiki/Python_(programming_language)")
+    )
+
+    val CPP = Language(
+        "C++",
+        authors(Author("Bjarne", "Stroustrup")),
+        "1985",
+        paradigms(PROCEDURAL, FUNCTIONAL, OBJECT_ORIENTED, GENERIC),
+        7.562,
+        URL("https://en.wikipedia.org/wiki/C%2B%2B")
+    )
+
+    val VBNET = Language(
+        "Visual Basic .NET",
+        authors(Author("Microsoft")),
+        "2002",
+        paradigms(
+            STRUCTURED,
+            IMPERATIVE,
+            OBJECT_ORIENTED,
+            DECLARATIVE,
+            GENERIC,
+            REFLECTIVE,
+            EVENT_DRIVEN
+        ),
+        7.127,
+        URL("https://en.wikipedia.org/wiki/Visual_Basic_.NET")
+    )
+
+    val C_SHARP = Language(
+        "C#",
+        authors(Author("Microsoft")),
+        "200",
+        paradigms(
+            STRUCTURED,
+            IMPERATIVE,
+            OBJECT_ORIENTED,
+            EVENT_DRIVEN,
+            TASK_DRIVEN,
+            FUNCTIONAL,
+            GENERIC,
+            REFLECTIVE,
+            CONCURRENT
+        ),
+        3.455,
+        URL("https://en.wikipedia.org/wiki/C_Sharp_(programming_language)")
+    )
+
+    val JAVA_SCRIPT = Language(
+        "JavaScript",
+        authors(Author("Brendan", "Eich")),
+        "1995",
+        paradigms(EVENT_DRIVEN, FUNCTIONAL, IMPERATIVE, OBJECT_ORIENTED),
+        3.063,
+        URL("https://en.wikipedia.org/wiki/JavaScript")
+    )
+
+    val PHP = Language(
+        "PHP",
+        authors(Author("Rasmus", "Lerdorf")),
+        "1994",
+        paradigms(IMPERATIVE, FUNCTIONAL, OBJECT_ORIENTED, PROCEDURAL, REFLECTIVE),
+        2.442,
+        URL("https://en.wikipedia.org/wiki/PHP")
+    )
+
+    val SQL = Language(
+        "SQL",
+        authors(Author("Donald", "D. Chamberlin"), Author("Raymond", "F. Boyce")),
+        "1986",
+        paradigms(DECLARATIVE),
+        2.184,
+        URL("https://en.wikipedia.org/wiki/C_(programming_language)")
+    )
+
+    val OBJECTIVE_C = Language(
+        "Objective-C",
+        authors(Author("Tom", "Love"), Author("Brad", "Cox")),
+        "early 1980s",
+        paradigms(IMPERATIVE, STRUCTURED),
+        14.282,
+        URL("https://en.wikipedia.org/wiki/C_(programming_language)")
+    )
+
+    init {
+        list = Collections.unmodifiableList(
+            ArrayList<Language>().apply {
+                add(JAVA)
+                add(C)
+                add(PYTHON)
+                add(CPP)
+                add(VBNET)
+                add(C_SHARP)
+                add(JAVA_SCRIPT)
+                add(PHP)
+                add(SQL)
+                add(OBJECTIVE_C)
+            })
+    }
+
+    object Creator {
+        fun <E> authors(vararg o: E): Set<E> {
+            val set = HashSet<E>()
+            for (e in o) set.add(e)
+            return Collections.unmodifiableSet(set)
+        }
+
+        fun <E> paradigms(vararg o: E) = authors(*o)
+    }
+}
