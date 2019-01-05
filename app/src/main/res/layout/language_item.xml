@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/language_item_background"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/language_src"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="4dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_launcher_background"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/language_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintBottom_toBottomOf="@id/language_src"
+        app:layout_constraintLeft_toRightOf="@id/language_src"
+        app:layout_constraintTop_toTopOf="@id/language_src"
+        tools:text="Language name" />
+
+    <TextView
+        android:id="@+id/authors_label"
+        style="@style/LanguageItemLabel"
+        android:text="@string/authors_label"
+        app:layout_constraintTop_toBottomOf="@id/language_src" />
+
+    <TextView
+        android:id="@+id/authors"
+        style="@style/LanguageItemInfo"
+        android:layout_width="0dp"
+        app:layout_constraintLeft_toRightOf="@id/authors_label"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/language_src"
+        tools:text="Jack Smith" />
+
+
+    <TextView
+        android:id="@+id/release_year_label"
+        style="@style/LanguageItemLabel"
+        android:text="@string/release_year_label"
+        app:layout_constraintTop_toBottomOf="@id/authors" />
+
+    <TextView
+        android:id="@+id/release_year"
+        style="@style/LanguageItemInfo"
+        android:layout_width="0dp"
+        app:layout_constraintLeft_toRightOf="@id/release_year_label"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/authors"
+        tools:text="2011" />
+
+    <TextView
+        android:id="@+id/paradigms_label"
+        style="@style/LanguageItemLabel"
+        android:text="@string/paradigms_label"
+        app:layout_constraintTop_toBottomOf="@id/release_year" />
+
+    <TextView
+        android:id="@+id/paradigms"
+        style="@style/LanguageItemInfo"
+        android:layout_width="0dp"
+        app:layout_constraintLeft_toRightOf="@id/paradigms_label"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/release_year"
+        tools:text="Object-oriented, reflective, concurrent" />
+
+    <TextView
+        android:id="@+id/tiobe_label"
+        style="@style/LanguageItemLabel"
+        android:text="@string/tiobe_label"
+        app:layout_constraintTop_toBottomOf="@id/paradigms" />
+
+    <TextView
+        android:id="@+id/tiobe"
+        style="@style/LanguageItemInfo"
+        android:layout_width="0dp"
+        app:layout_constraintLeft_toRightOf="@id/tiobe_label"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/paradigms"
+        tools:text="14.033%" />
+
+</android.support.constraint.ConstraintLayout>

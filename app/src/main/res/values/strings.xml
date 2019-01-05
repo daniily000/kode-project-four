@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Language Viewer</string>
+    <string name="authors_label">Authors:</string>
+    <string name="release_year_label">Release year:</string>
+    <string name="paradigms_label">Paradigms:</string>
+    <string name="tiobe_label">TIOBE index:</string>
 </resources>

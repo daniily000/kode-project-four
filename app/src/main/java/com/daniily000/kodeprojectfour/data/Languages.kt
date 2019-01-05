@@ -17,16 +17,18 @@ object Languages {
         "1995",
         paradigms(OBJECT_ORIENTED, STRUCTURED, IMPERATIVE, GENERIC, REFLECTIVE, CONCURRENT),
         15.932,
-        URL("https://en.wikipedia.org/wiki/Java_(programming_language)")
+        URL("https://en.wikipedia.org/wiki/Java_(programming_language)"),
+        "java"
     )
 
     val C = Language(
         "C",
-        authors(Author("James", "Gosling")),
+        authors(Author("Dennis", "Ritchie")),
         "1973",
         paradigms(IMPERATIVE, STRUCTURED),
         14.282,
-        URL("https://en.wikipedia.org/wiki/C_(programming_language)")
+        URL("https://en.wikipedia.org/wiki/C_(programming_language)"),
+        "c"
     )
 
     val PYTHON = Language(
@@ -35,7 +37,8 @@ object Languages {
         "1991",
         paradigms(FUNCTIONAL, IMPERATIVE, OBJECT_ORIENTED, REFLECTIVE),
         8.376,
-        URL("https://en.wikipedia.org/wiki/Python_(programming_language)")
+        URL("https://en.wikipedia.org/wiki/Python_(programming_language)"),
+        "python"
     )
 
     val CPP = Language(
@@ -44,7 +47,8 @@ object Languages {
         "1985",
         paradigms(PROCEDURAL, FUNCTIONAL, OBJECT_ORIENTED, GENERIC),
         7.562,
-        URL("https://en.wikipedia.org/wiki/C%2B%2B")
+        URL("https://en.wikipedia.org/wiki/C%2B%2B"),
+        "cpp"
     )
 
     val VBNET = Language(
@@ -61,7 +65,8 @@ object Languages {
             EVENT_DRIVEN
         ),
         7.127,
-        URL("https://en.wikipedia.org/wiki/Visual_Basic_.NET")
+        URL("https://en.wikipedia.org/wiki/Visual_Basic_.NET"),
+        "vbnet"
     )
 
     val C_SHARP = Language(
@@ -80,7 +85,8 @@ object Languages {
             CONCURRENT
         ),
         3.455,
-        URL("https://en.wikipedia.org/wiki/C_Sharp_(programming_language)")
+        URL("https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"),
+        "csharp"
     )
 
     val JAVA_SCRIPT = Language(
@@ -89,7 +95,8 @@ object Languages {
         "1995",
         paradigms(EVENT_DRIVEN, FUNCTIONAL, IMPERATIVE, OBJECT_ORIENTED),
         3.063,
-        URL("https://en.wikipedia.org/wiki/JavaScript")
+        URL("https://en.wikipedia.org/wiki/JavaScript"),
+        "java_script"
     )
 
     val PHP = Language(
@@ -98,7 +105,8 @@ object Languages {
         "1994",
         paradigms(IMPERATIVE, FUNCTIONAL, OBJECT_ORIENTED, PROCEDURAL, REFLECTIVE),
         2.442,
-        URL("https://en.wikipedia.org/wiki/PHP")
+        URL("https://en.wikipedia.org/wiki/PHP"),
+        "php"
     )
 
     val SQL = Language(
@@ -107,7 +115,8 @@ object Languages {
         "1986",
         paradigms(DECLARATIVE),
         2.184,
-        URL("https://en.wikipedia.org/wiki/C_(programming_language)")
+        URL("https://en.wikipedia.org/wiki/C_(programming_language)"),
+        "sql"
     )
 
     val OBJECTIVE_C = Language(
@@ -115,8 +124,9 @@ object Languages {
         authors(Author("Tom", "Love"), Author("Brad", "Cox")),
         "early 1980s",
         paradigms(IMPERATIVE, STRUCTURED),
-        14.282,
-        URL("https://en.wikipedia.org/wiki/C_(programming_language)")
+        1.781,
+        URL("https://en.wikipedia.org/wiki/C_(programming_language)"),
+        "objective_c"
     )
 
     init {
