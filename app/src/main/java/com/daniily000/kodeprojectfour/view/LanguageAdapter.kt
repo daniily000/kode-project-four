@@ -18,10 +18,6 @@ import kotlinx.android.synthetic.main.language_item.view.*
 class LanguageAdapter(private val languages: List<Language>) :
     RecyclerView.Adapter<LanguageAdapter.LanguageViewHolder>() {
 
-    private val appearAnimation = AlphaAnimation(0f, 1f).apply {
-        duration = 500
-    }
-
     /**
      * Initializes a view with no data
      */
@@ -52,7 +48,6 @@ class LanguageAdapter(private val languages: List<Language>) :
             release_year.text = lang.releaseYear
             paradigms.text = lang.paradigms()
             tiobe.text = String.format("%.3f%%", lang.tiobeIndex)
-            startAnimation(appearAnimation)
         }
     }
 
