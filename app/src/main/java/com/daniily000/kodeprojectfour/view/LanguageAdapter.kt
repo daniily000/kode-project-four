@@ -7,16 +7,20 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AlphaAnimation
 import com.daniily000.kodeprojectfour.R
 import com.daniily000.kodeprojectfour.data.Language
 import kotlinx.android.synthetic.main.language_item.view.*
-import java.util.*
 
 /**
  * Adapts givel Language data array to become a view to display
  */
 class LanguageAdapter(private val languages: List<Language>) :
     RecyclerView.Adapter<LanguageAdapter.LanguageViewHolder>() {
+
+    private val appearAnimation = AlphaAnimation(0f, 1f).apply {
+        duration = 500
+    }
 
     /**
      * Initializes a view with no data
@@ -48,6 +52,7 @@ class LanguageAdapter(private val languages: List<Language>) :
             release_year.text = lang.releaseYear
             paradigms.text = lang.paradigms()
             tiobe.text = String.format("%.3f%%", lang.tiobeIndex)
+            startAnimation(appearAnimation)
         }
     }
 
