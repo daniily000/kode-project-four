@@ -5,7 +5,7 @@
     <item
         android:id="@+id/action_search"
         android:icon="@drawable/ic_find_in_page_white"
-        android:title="Search by paradigms"
+        android:title="@string/search_bar_hint"
         app:showAsAction="ifRoom" />
 
 </menu>

@@ -10,8 +10,9 @@
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/white">
 
         <EditText
             android:id="@+id/search_bar"
@@ -20,9 +21,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:backgroundTint="@color/white"
-            android:hint="Search by patterns"
+            android:foregroundTint="@color/white"
+            android:hint="@string/search_bar_hint"
+            android:inputType="text"
+            android:textColor="@color/white"
             android:textColorHint="@color/half_white"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
 
     </android.support.v7.widget.Toolbar>

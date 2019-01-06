@@ -4,4 +4,6 @@
     <string name="release_year_label">Release year:</string>
     <string name="paradigms_label">Paradigms:</string>
     <string name="tiobe_label">TIOBE index:</string>
+    <string name="web_view_title_suffix">language info</string>
+    <string name="search_bar_hint">Search by paradigms</string>
 </resources>

@@ -1,14 +1,8 @@
 package com.daniily000.kodeprojectfour
 
-import android.content.Context
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
-import com.daniily000.kodeprojectfour.data.Language
 import com.daniily000.kodeprojectfour.data.Languages
-import com.daniily000.kodeprojectfour.view.LanguageAdapter
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import com.daniily000.kodeprojectfour.view.LanguageAdapter.*
 
 class LanguagesUnitTest {
 

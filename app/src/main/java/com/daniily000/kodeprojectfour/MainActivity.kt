@@ -1,5 +1,6 @@
 package com.daniily000.kodeprojectfour
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.GridLayoutManager
@@ -28,7 +29,14 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         languages_list.layoutManager = GridLayoutManager(this, SPAN_COUNT)
-        languages_list.adapter = LanguageAdapter(mCurrentLanguagesList)
+        languages_list.adapter = LanguageAdapter(mCurrentLanguagesList).also {
+            it.listener = {language ->
+                startActivity(Intent(this, WebViewActivity::class.java).apply {
+                    putExtra(WebViewActivity.EXTRA_NAME, language.name)
+                    putExtra(WebViewActivity.EXTRA_URL, language.infoPage.toString())
+                })
+            }
+        }
 
         search_bar.clearFocus()
 
