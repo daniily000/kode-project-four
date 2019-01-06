@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Language Viewer</string>
+    <string name="authors_label">Авторы:</string>
+    <string name="release_year_label">Год выхода:</string>
+    <string name="paradigms_label">Парадигмы:</string>
+    <string name="tiobe_label">Индекс TIOBE:</string>
+    <string name="web_view_title_suffix">- информация</string>
+    <string name="search_bar_hint">Искать по парадигмам</string>
+</resources>
