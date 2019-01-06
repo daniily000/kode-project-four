@@ -8,8 +8,8 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import android.view.View.GONE
+import android.view.View.VISIBLE
 import com.daniily000.kodeprojectfour.data.Language
 import com.daniily000.kodeprojectfour.data.Languages
 import com.daniily000.kodeprojectfour.view.LanguageAdapter
@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         private const val SPAN_COUNT = 1
+        private const val SEARCH_BAR_STATE_VISIBILITY = "search_bar_visibility"
+        private const val SEARCH_BAR_STATE_TEXT = "search_bar_text"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -76,8 +78,8 @@ class MainActivity : AppCompatActivity() {
 
         R.id.action_search -> {
 
-            if (search_bar.visibility == View.GONE) {
-                search_bar.visibility = View.VISIBLE
+            if (search_bar.visibility == GONE) {
+                search_bar.visibility = VISIBLE
                 search_bar.requestFocus()
             } else {
                 search_bar.visibility = GONE
@@ -90,4 +92,15 @@ class MainActivity : AppCompatActivity() {
         else -> super.onOptionsItemSelected(item)
     }
 
+    override fun onSaveInstanceState(outState: Bundle?) {
+        super.onSaveInstanceState(outState)
+        outState?.putInt(SEARCH_BAR_STATE_VISIBILITY, search_bar.visibility)
+        outState?.putString(SEARCH_BAR_STATE_TEXT, search_bar.text.toString())
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
+        super.onRestoreInstanceState(savedInstanceState)
+        search_bar.visibility = savedInstanceState?.getInt(SEARCH_BAR_STATE_VISIBILITY) ?: GONE
+        search_bar.setText(savedInstanceState?.getString(SEARCH_BAR_STATE_TEXT) ?: "")
+    }
 }

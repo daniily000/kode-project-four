@@ -24,6 +24,16 @@ class WebViewActivity : AppCompatActivity() {
         web_view.loadUrl(intent.getStringExtra(EXTRA_URL))
     }
 
+    override fun onSaveInstanceState(outState: Bundle?) {
+        super.onSaveInstanceState(outState)
+        web_view.saveState(outState)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
+        super.onRestoreInstanceState(savedInstanceState)
+        web_view.restoreState(savedInstanceState)
+    }
+
     override fun onBackPressed() {
         if (web_view.canGoBack()) web_view.goBack()
         else super.onBackPressed()
