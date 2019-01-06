@@ -12,7 +12,7 @@ import com.daniily000.kodeprojectfour.data.Language
 import kotlinx.android.synthetic.main.language_item.view.*
 
 /**
- * Adapts givel Language data array to become a view to display
+ * Adapts given Language data array to become a view to display
  */
 class LanguageAdapter(private val languages: List<Language>) :
     RecyclerView.Adapter<LanguageAdapter.LanguageViewHolder>() {

@@ -30,6 +30,10 @@ data class Language(
             .replace("[", "")
             .replace("]", "")
 
+    /**
+     * Searches for every given keyword as a substring in paradigms. If any keyword is not a
+     * substring, returns false
+     */
     fun searchParadigms(vararg keywords: String): Boolean {
         Log.d(TAG, "Searching in ${paradigms()}")
 
