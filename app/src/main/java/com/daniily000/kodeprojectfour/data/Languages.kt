@@ -72,7 +72,7 @@ object Languages {
     val C_SHARP = Language(
         "C#",
         authors(Author("Microsoft")),
-        "200",
+        "1998-2001",
         paradigms(
             STRUCTURED,
             IMPERATIVE,
