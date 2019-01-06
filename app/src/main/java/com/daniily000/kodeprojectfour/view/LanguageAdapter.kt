@@ -59,7 +59,7 @@ class LanguageAdapter(private val languages: List<Language>) :
     class LanguageViewHolder(internal val mView: View) : RecyclerView.ViewHolder(mView)
 
     /**
-     * Searches for a bitmap with name "bitmap_php${language.name.toLowerCase()}" from mipmap dir for
+     * Searches for a bitmap with name "bitmap_${language.xmlName.toLowerCase()}" from mipmap dir for
      * a language. Returns null if not found
      */
     private fun Language.bitmap(context: Context): Bitmap? = try {
