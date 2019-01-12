@@ -17,4 +17,6 @@ enum class Paradigm {
     override fun toString(): String {
         return this.name.toLowerCase().capitalize().replace('_', '-')
     }
+
+    val xmlName = this.name.toLowerCase()
 }

@@ -7,4 +7,25 @@
     <string name="tiobe_label">Индекс TIOBE:</string>
     <string name="web_view_title_suffix">- информация</string>
     <string name="search_bar_hint">Искать по парадигмам</string>
+    <string name="author_dennis_ritchie">Деннис Ричи</string>
+    <string name="author_james_gosling">Джеймс Гослинг</string>
+    <string name="author_guido_van_rossum">Гвидо ван Россум</string>
+    <string name="author_bjarne_stroustrup">Бйорн Строустрап</string>
+    <string name="author_brendan_eich">Брэндан Ейх</string>
+    <string name="author_rasmus_lerdorf">Расмус Лердорф</string>
+    <string name="author_donald_d_chamberlin">Дональд Д. Чамберлин</string>
+    <string name="author_raymond_f_boyce">Реймонд Ф. Бойс</string>
+    <string name="author_brad_cox">Брэд Кокс</string>
+    <string name="author_tom_love">Том Лав</string>
+    <string name="paradigm_event_driven">Событийно-ориентированный</string>
+    <string name="paradigm_object_oriented">Объектно-ориентированный</string>
+    <string name="paradigm_imperative">Императивный</string>
+    <string name="paradigm_task_driven">Управляемый задачей</string>
+    <string name="paradigm_generic">Обобщенный</string>
+    <string name="paradigm_functional">Функциональный</string>
+    <string name="paradigm_declarative">Декларативный</string>
+    <string name="paradigm_procedural">Процедурный</string>
+    <string name="paradigm_concurrent">Многопоточный</string>
+    <string name="paradigm_reflective">Рефлексивный</string>
+    <string name="paradigm_structured">Структурированный</string>
 </resources>

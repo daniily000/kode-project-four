@@ -23,8 +23,20 @@ class LanguagesUnitTest {
     }
 
     @Test
+    fun showLanguageXml() {
+        for (language in Languages.list) language.authors.forEach{println("author_${it.xmlName}")}
+    }
+
+    @Test
     fun showLanguageBitmapResourceNames() {
         for (language in Languages.list) println(language.xmlName)
+    }
+
+    @Test
+    fun showParadigmXml() {
+        val set = HashSet<String>()
+        for (language in Languages.list) language.paradigms.forEach { set.add("paradigm_${it.xmlName}") }
+        set.forEach { println(it) }
     }
 
 }

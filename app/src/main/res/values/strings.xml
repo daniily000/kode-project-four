@@ -6,4 +6,26 @@
     <string name="tiobe_label">TIOBE index:</string>
     <string name="web_view_title_suffix">language info</string>
     <string name="search_bar_hint">Search by paradigms</string>
+    <string name="author_dennis_ritchie">Dennis Ritchie</string>
+    <string name="author_james_gosling">James Gosling</string>
+    <string name="author_guido_van_rossum">Guido van Rossum</string>
+    <string name="author_bjarne_stroustrup">Bjarne Stroustrup</string>
+    <string name="author_microsoft" translatable="false">Microsoft</string>
+    <string name="author_brendan_eich">Brendan Eich</string>
+    <string name="author_rasmus_lerdorf">Rasmus Lerdorf</string>
+    <string name="author_donald_d_chamberlin">Donald D. Chamberlin</string>
+    <string name="author_raymond_f_boyce">Raymond F. Boyce</string>
+    <string name="author_brad_cox">Brad Cox</string>
+    <string name="author_tom_love">Tom Love</string>
+    <string name="paradigm_event_driven">Event-driven</string>
+    <string name="paradigm_object_oriented">Object-oriented</string>
+    <string name="paradigm_imperative">Imperative</string>
+    <string name="paradigm_task_driven">Task-driven</string>
+    <string name="paradigm_generic">Generic</string>
+    <string name="paradigm_functional">Functional</string>
+    <string name="paradigm_declarative">Declarative</string>
+    <string name="paradigm_procedural">Procedural</string>
+    <string name="paradigm_concurrent">Concurrent</string>
+    <string name="paradigm_reflective">Reflective</string>
+    <string name="paradigm_structured">Structured</string>
 </resources>

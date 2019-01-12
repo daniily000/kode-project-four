@@ -13,7 +13,7 @@ object Languages {
 
     val JAVA = Language(
         "Java",
-        authors(Author("James", "Gosling")),
+        authors(Author("James", "Gosling", "james_gosling")),
         "1995",
         paradigms(OBJECT_ORIENTED, STRUCTURED, IMPERATIVE, GENERIC, REFLECTIVE, CONCURRENT),
         15.932,
@@ -23,7 +23,7 @@ object Languages {
 
     val C = Language(
         "C",
-        authors(Author("Dennis", "Ritchie")),
+        authors(Author("Dennis", "Ritchie", "dennis_ritchie")),
         "1973",
         paradigms(IMPERATIVE, STRUCTURED),
         14.282,
@@ -33,7 +33,7 @@ object Languages {
 
     val PYTHON = Language(
         "Python",
-        authors(Author("Guido", "van Rossum")),
+        authors(Author("Guido", "van Rossum", "guido_van_rossum")),
         "1991",
         paradigms(FUNCTIONAL, IMPERATIVE, OBJECT_ORIENTED, REFLECTIVE),
         8.376,
@@ -43,7 +43,7 @@ object Languages {
 
     val CPP = Language(
         "C++",
-        authors(Author("Bjarne", "Stroustrup")),
+        authors(Author("Bjarne", "Stroustrup", "bjarne_stroustrup")),
         "1985",
         paradigms(PROCEDURAL, FUNCTIONAL, OBJECT_ORIENTED, GENERIC),
         7.562,
@@ -53,7 +53,7 @@ object Languages {
 
     val VBNET = Language(
         "Visual Basic .NET",
-        authors(Author("Microsoft")),
+        authors(Author("Microsoft", xmlName = "microsoft")),
         "2002",
         paradigms(
             STRUCTURED,
@@ -71,7 +71,7 @@ object Languages {
 
     val C_SHARP = Language(
         "C#",
-        authors(Author("Microsoft")),
+        authors(Author("Microsoft", xmlName = "microsoft")),
         "1998-2001",
         paradigms(
             STRUCTURED,
@@ -91,7 +91,7 @@ object Languages {
 
     val JAVA_SCRIPT = Language(
         "JavaScript",
-        authors(Author("Brendan", "Eich")),
+        authors(Author("Brendan", "Eich", "brendan_eich")),
         "1995",
         paradigms(EVENT_DRIVEN, FUNCTIONAL, IMPERATIVE, OBJECT_ORIENTED),
         3.063,
@@ -101,7 +101,7 @@ object Languages {
 
     val PHP = Language(
         "PHP",
-        authors(Author("Rasmus", "Lerdorf")),
+        authors(Author("Rasmus", "Lerdorf", "rasmus_lerdorf")),
         "1994",
         paradigms(IMPERATIVE, FUNCTIONAL, OBJECT_ORIENTED, PROCEDURAL, REFLECTIVE),
         2.442,
@@ -111,7 +111,7 @@ object Languages {
 
     val SQL = Language(
         "SQL",
-        authors(Author("Donald", "D. Chamberlin"), Author("Raymond", "F. Boyce")),
+        authors(Author("Donald", "D. Chamberlin", "donald_d_chamberlin"), Author("Raymond", "F. Boyce", "raymond_f_boyce")),
         "1986",
         paradigms(DECLARATIVE),
         2.184,
@@ -121,7 +121,7 @@ object Languages {
 
     val OBJECTIVE_C = Language(
         "Objective-C",
-        authors(Author("Tom", "Love"), Author("Brad", "Cox")),
+        authors(Author("Tom", "Love", "tom_love"), Author("Brad", "Cox", "brad_cox")),
         "early 1980s",
         paradigms(IMPERATIVE, STRUCTURED),
         1.781,

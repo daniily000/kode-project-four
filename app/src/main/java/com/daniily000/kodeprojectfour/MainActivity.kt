@@ -12,12 +12,14 @@ import android.view.View.GONE
 import android.view.View.VISIBLE
 import com.daniily000.kodeprojectfour.data.Language
 import com.daniily000.kodeprojectfour.data.Languages
+import com.daniily000.kodeprojectfour.util.TranslationHelper
 import com.daniily000.kodeprojectfour.view.LanguageAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
     private var mCurrentLanguagesList: MutableList<Language> = Languages.list.toMutableList()
+    private lateinit var translationHelper: TranslationHelper
 
     companion object {
         private const val SPAN_COUNT = 1
@@ -29,6 +31,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+
+        translationHelper = TranslationHelper(resources)
 
         languages_list.layoutManager = GridLayoutManager(this, SPAN_COUNT)
         languages_list.adapter = LanguageAdapter(mCurrentLanguagesList).also {
