@@ -1,8 +1,14 @@
 package com.daniily000.kodeprojectfour.data
 
-enum class Paradigm {
+data class Paradigm(val name: String) {
 
-    OBJECT_ORIENTED,
+    override fun toString(): String = name.toLowerCase().capitalize()
+
+}
+
+/*
+
+    OBJECT_ORIENTED
     STRUCTURED,
     IMPERATIVE,
     GENERIC,
@@ -14,9 +20,4 @@ enum class Paradigm {
     DECLARATIVE,
     TASK_DRIVEN;
 
-    override fun toString(): String {
-        return this.name.toLowerCase().capitalize().replace('_', '-')
-    }
-
-    val xmlName = this.name.toLowerCase()
-}
+ */

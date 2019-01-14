@@ -11,7 +11,7 @@ data class Language(
     val paradigms: Set<Paradigm>,
     val tiobeIndex: Double,
     val infoPage: URL,
-    val xmlName: String
+    val id: Int? = null
 ) {
 
     /**
